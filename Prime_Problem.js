@@ -1,10 +1,13 @@
-function checkprime(num){
-var count_factor=0;
-   for(let i=1; i<num.length-1; i++){
-     if(num%2==0){
-   return true;
-  }
+function checkprime(num)
+let count = 0;
+for ( let i=1;i<=num;i++)
+{
+    if(num%i==0){ count++; }
+
 }
-return false;
+count==2?console.log("Yes Prime "): console.log("Not Prime");
+
 }
+
+
 checkprime(21);
